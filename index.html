@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Side-scroller prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/Stills/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <!-- Canvas for game rendering -->
+  <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+  <!-- Dialogue UI (kept simple as an overlay div) -->
+  <div id="dialogueBox" class="hidden" aria-live="polite">
+    <div id="dialogueName" class="dialogue-name"></div>
+    <div id="dialogueText" class="dialogue-text"></div>
+    <div class="dialogue-hint">Press <strong>E</strong> to continue / close</div>
+  </div>
+
+  <!-- Small instruction overlay -->
+  <div id="hud">
+    Move: A / D or ← / → &nbsp; • &nbsp; Jump: Space &nbsp; • &nbsp; Talk: E
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
